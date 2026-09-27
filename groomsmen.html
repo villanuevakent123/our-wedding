@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>Wedding Guest List</title>
+    <title>Groomsmen</title>
 
     <style>
         * {
@@ -21,67 +21,57 @@
 
             font-family: Georgia, serif;
             color: #111;
-
             background: #000;
         }
 
         .card {
             width: 90%;
             max-width: 650px;
-
             padding: 50px 30px;
 
             background: #fff;
 
             border: 1px solid #ddd;
-
             box-shadow: 0 0 40px rgba(255,255,255,0.15);
         }
 
         .flower {
             text-align: center;
             font-size: 42px;
-            color: #000;
         }
 
         h1 {
             text-align: center;
 
-            font-size: 25px;
+            font-size: 27px;
             font-weight: normal;
 
-            letter-spacing: 4px;
+            letter-spacing: 5px;
             text-transform: uppercase;
         }
 
         .subtitle {
             text-align: center;
-
             line-height: 1.8;
-
             margin: 25px auto 35px;
-
-            max-width: 500px;
         }
 
-        .guest-list {
+        .list {
             list-style: none;
-
             padding: 0;
             margin: 0;
         }
 
-        .guest-list li {
-            padding: 15px 10px;
+        .list li {
+            padding: 16px 10px;
 
             border-bottom: 1px solid #ddd;
 
-            font-size: 17px;
+            font-size: 18px;
         }
 
-        .guest-number {
+        .number {
             color: #777;
-
             margin-right: 12px;
         }
 
@@ -91,37 +81,18 @@
             width: fit-content;
 
             margin: 35px auto 0;
-
-            padding: 13px 30px;
+            padding: 13px 28px;
 
             color: #fff;
             background: #000;
 
             text-decoration: none;
-
             border: 1px solid #000;
-
-            transition: 0.3s;
         }
 
         .back:hover {
-            background: #fff;
             color: #000;
-        }
-
-        @media (max-width: 500px) {
-
-            .card {
-                padding: 40px 20px;
-            }
-
-            h1 {
-                font-size: 21px;
-            }
-
-            .guest-list li {
-                font-size: 16px;
-            }
+            background: #fff;
         }
     </style>
 </head>
@@ -130,55 +101,40 @@
 
     <div class="card">
 
-        <div class="flower">❦</div>
+        <div class="flower">♔</div>
 
-        <h1>Our Guest List</h1>
+        <h1>Groomsmen</h1>
 
         <p class="subtitle">
-            We are grateful to celebrate our special day
-            with the people we love.
+            The gentlemen standing beside the groom
+            on this special day.
         </p>
 
-        <ul class="guest-list">
+        <ul class="list">
 
             <li>
-                <span class="guest-number">01.</span>
-                Maria Santos
-            </li>
-
-            <li>
-                <span class="guest-number">02.</span>
+                <span class="number">01.</span>
                 Michael Santos
             </li>
 
             <li>
-                <span class="guest-number">03.</span>
-                Anna Reyes
-            </li>
-
-            <li>
-                <span class="guest-number">04.</span>
+                <span class="number">02.</span>
                 Daniel Reyes
             </li>
 
             <li>
-                <span class="guest-number">05.</span>
-                Sarah Cruz
-            </li>
-
-            <li>
-                <span class="guest-number">06.</span>
+                <span class="number">03.</span>
                 James Cruz
             </li>
 
             <li>
-                <span class="guest-number">07.</span>
-                Emily Garcia
+                <span class="number">04.</span>
+                Robert Garcia
             </li>
 
             <li>
-                <span class="guest-number">08.</span>
-                Robert Garcia
+                <span class="number">05.</span>
+                William Torres
             </li>
 
         </ul>
