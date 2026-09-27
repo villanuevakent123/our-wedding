@@ -20,87 +20,107 @@
             align-items: center;
 
             font-family: Georgia, serif;
-            color: #4d4038;
+            color: #111;
 
-            background: #f8f3ee;
+            background: #000;
         }
 
         .card {
             width: 90%;
             max-width: 650px;
 
-            padding: 45px 30px;
+            padding: 50px 30px;
 
-            background: #fffdf9;
-            border: 1px solid #dfd1c4;
-            border-radius: 15px;
+            background: #fff;
 
-            box-shadow: 0 10px 30px rgba(0,0,0,0.08);
+            border: 1px solid #ddd;
+
+            box-shadow: 0 0 40px rgba(255,255,255,0.15);
         }
 
         .flower {
             text-align: center;
-            font-size: 40px;
-            color: #a48a76;
+            font-size: 42px;
+            color: #000;
         }
 
         h1 {
             text-align: center;
+
             font-size: 25px;
             font-weight: normal;
-            letter-spacing: 3px;
+
+            letter-spacing: 4px;
             text-transform: uppercase;
-            color: #806653;
         }
 
         .subtitle {
             text-align: center;
-            line-height: 1.7;
-            margin-bottom: 30px;
+
+            line-height: 1.8;
+
+            margin: 25px auto 35px;
+
+            max-width: 500px;
         }
 
         .guest-list {
             list-style: none;
+
             padding: 0;
             margin: 0;
         }
 
         .guest-list li {
-            padding: 14px 10px;
+            padding: 15px 10px;
 
-            border-bottom: 1px solid #e5dcd4;
+            border-bottom: 1px solid #ddd;
 
             font-size: 17px;
         }
 
         .guest-number {
-            color: #a48a76;
+            color: #777;
+
             margin-right: 12px;
         }
 
         .back {
             display: block;
+
             width: fit-content;
 
-            margin: 30px auto 0;
-            padding: 13px 28px;
+            margin: 35px auto 0;
 
-            color: white;
-            background: #806653;
+            padding: 13px 30px;
+
+            color: #fff;
+            background: #000;
 
             text-decoration: none;
-            border-radius: 25px;
+
+            border: 1px solid #000;
 
             transition: 0.3s;
         }
 
         .back:hover {
-            background: #5f4b3d;
+            background: #fff;
+            color: #000;
         }
 
         @media (max-width: 500px) {
+
             .card {
-                padding: 35px 20px;
+                padding: 40px 20px;
+            }
+
+            h1 {
+                font-size: 21px;
+            }
+
+            .guest-list li {
+                font-size: 16px;
             }
         }
     </style>
@@ -110,7 +130,7 @@
 
     <div class="card">
 
-        <div class="flower">❀</div>
+        <div class="flower">❦</div>
 
         <h1>Our Guest List</h1>
 
@@ -163,9 +183,8 @@
 
         </ul>
 
-        <!-- Returns to the invitation -->
         <a href="index.html" class="back">
-            ← Back to Invitation
+            ← BACK TO INVITATION
         </a>
 
     </div>
