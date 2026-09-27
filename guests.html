@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Wedding Guest List</title>
+
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+            min-height: 100vh;
+
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            font-family: Georgia, serif;
+            color: #4d4038;
+
+            background: #f8f3ee;
+        }
+
+        .card {
+            width: 90%;
+            max-width: 650px;
+
+            padding: 45px 30px;
+
+            background: #fffdf9;
+            border: 1px solid #dfd1c4;
+            border-radius: 15px;
+
+            box-shadow: 0 10px 30px rgba(0,0,0,0.08);
+        }
+
+        .flower {
+            text-align: center;
+            font-size: 40px;
+            color: #a48a76;
+        }
+
+        h1 {
+            text-align: center;
+            font-size: 25px;
+            font-weight: normal;
+            letter-spacing: 3px;
+            text-transform: uppercase;
+            color: #806653;
+        }
+
+        .subtitle {
+            text-align: center;
+            line-height: 1.7;
+            margin-bottom: 30px;
+        }
+
+        .guest-list {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        .guest-list li {
+            padding: 14px 10px;
+
+            border-bottom: 1px solid #e5dcd4;
+
+            font-size: 17px;
+        }
+
+        .guest-number {
+            color: #a48a76;
+            margin-right: 12px;
+        }
+
+        .back {
+            display: block;
+            width: fit-content;
+
+            margin: 30px auto 0;
+            padding: 13px 28px;
+
+            color: white;
+            background: #806653;
+
+            text-decoration: none;
+            border-radius: 25px;
+
+            transition: 0.3s;
+        }
+
+        .back:hover {
+            background: #5f4b3d;
+        }
+
+        @media (max-width: 500px) {
+            .card {
+                padding: 35px 20px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="card">
+
+        <div class="flower">❀</div>
+
+        <h1>Our Guest List</h1>
+
+        <p class="subtitle">
+            We are grateful to celebrate our special day
+            with the people we love.
+        </p>
+
+        <ul class="guest-list">
+
+            <li>
+                <span class="guest-number">01.</span>
+                Maria Santos
+            </li>
+
+            <li>
+                <span class="guest-number">02.</span>
+                Michael Santos
+            </li>
+
+            <li>
+                <span class="guest-number">03.</span>
+                Anna Reyes
+            </li>
+
+            <li>
+                <span class="guest-number">04.</span>
+                Daniel Reyes
+            </li>
+
+            <li>
+                <span class="guest-number">05.</span>
+                Sarah Cruz
+            </li>
+
+            <li>
+                <span class="guest-number">06.</span>
+                James Cruz
+            </li>
+
+            <li>
+                <span class="guest-number">07.</span>
+                Emily Garcia
+            </li>
+
+            <li>
+                <span class="guest-number">08.</span>
+                Robert Garcia
+            </li>
+
+        </ul>
+
+        <!-- Returns to the invitation -->
+        <a href="index.html" class="back">
+            ← Back to Invitation
+        </a>
+
+    </div>
+
+</body>
+</html>
