@@ -3,184 +3,217 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <title>Our Wedding</title>
-
+    <title>Kent & Noemae — Wedding</title>
     <style>
-        * {
-            box-sizing: border-box;
-        }
-
+        * { margin: 0; padding: 0; box-sizing: border-box; }
         body {
-            margin: 0;
-            min-height: 100vh;
-
-            display: flex;
-            justify-content: center;
-            align-items: center;
-
-            font-family: Georgia, serif;
-            color: #111;
-            background: #000;
-        }
-
-        .card {
-            width: 90%;
-            max-width: 650px;
-            padding: 55px 30px;
-
             background: #fff;
-            text-align: center;
-
-            border: 1px solid #ddd;
-            box-shadow: 0 0 40px rgba(255,255,255,0.15);
-        }
-
-        .flower {
-            font-size: 42px;
-        }
-
-        h1 {
-            font-size: 18px;
-            font-weight: normal;
-            letter-spacing: 5px;
-            text-transform: uppercase;
-        }
-
-        .names {
-            font-size: 50px;
-            margin: 30px 0;
-        }
-
-        .ampersand {
-            font-size: 28px;
-            color: #777;
-            margin: 8px 0;
-        }
-
-        .message {
-            font-size: 17px;
+            color: #000;
+            font-family: 'Georgia', serif;
             line-height: 1.8;
-            max-width: 500px;
-            margin: 25px auto;
+            padding: 2rem;
+            max-width: 700px;
+            margin: 0 auto;
+            text-align: center;
         }
-
-        .details {
-            margin: 30px 0;
-            line-height: 2;
-            font-size: 17px;
+        .top-icon { font-size: 2rem; margin-bottom: 0.5rem; }
+        .invite-header {
+            text-transform: uppercase;
+            letter-spacing: 3px;
+            margin-bottom: 1rem;
         }
-
-        .buttons {
-            margin-top: 30px;
+        .names {
+            font-size: 3rem;
+            margin: 1rem 0;
         }
-
+        .ampersand { color: #8b3a3a; }
+        .intro { margin-bottom: 2rem; }
+        .details { margin-bottom: 3rem; }
+        .details p { margin: 0.5rem 0; font-size: 1.1rem; }
+        .button-row {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 10px;
+            margin: 2rem 0 3rem;
+        }
         .button {
             display: inline-block;
-            margin: 7px 4px;
-            padding: 13px 22px;
-
-            color: #fff;
             background: #000;
-
+            color: #fff;
+            padding: 14px 28px;
+            text-transform: uppercase;
             text-decoration: none;
-            border: 1px solid #000;
-
-            transition: 0.3s;
+            font-size: 0.95rem;
+            letter-spacing: 1px;
         }
-
-        .button:hover {
-            color: #000;
-            background: #fff;
+        .section {
+            margin: 4rem 0;
+            padding-top: 2rem;
+            border-top: 1px solid #ddd;
         }
-
-        @media (max-width: 500px) {
-
-            .card {
-                padding: 45px 20px;
-            }
-
-            .names {
-                font-size: 38px;
-            }
-
-            .message,
-            .details {
-                font-size: 15px;
-            }
+        .section h2 {
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            margin-bottom: 1.5rem;
+            font-size: 1.5rem;
         }
+        .names-script {
+            font-family: 'Brush Script MT', cursive;
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+        }
+        .divider {
+            width: 100%;
+            height: 1px;
+            background: #ccc;
+            margin: 1rem auto 2rem;
+        }
+        .gift-text {
+            font-style: italic;
+            font-size: 1.1rem;
+            max-width: 500px;
+            margin: 0 auto 2.5rem;
+        }
+        .attire-options {
+            text-transform: uppercase;
+            font-weight: bold;
+            font-size: 1.3rem;
+            margin: 1.5rem 0 2rem;
+        }
+        .icons-row {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            max-width: 500px;
+            margin: 0 auto;
+        }
+        .icon svg {
+            width: 70px;
+            height: 70px;
+            fill: #2c3e50;
+        }
+        .color-palette p { font-style: italic; margin-bottom: 0.5rem; }
+        .color-swatch {
+            width: 60px;
+            height: 60px;
+            border-radius: 50%;
+            background: #2c3e50;
+            margin: 0 auto;
+        }
+        .party-list, .sponsors-list {
+            text-align: center;
+            line-height: 2;
+        }
+        .map-placeholder {
+            padding: 3rem;
+            background: #f9f9f9;
+            border: 1px solid #ddd;
+            margin: 1rem 0;
+        }
+        a:hover { opacity: 0.85; }
     </style>
 </head>
-
 <body>
 
-    <div class="card">
-
-        <div class="flower">❦</div>
-
-        <h1>We're Getting Married</h1>
-
-        <div class="names">
-            Kent
-            <div class="ampersand">&</div>
-            Noemae
-        </div>
-
-        <p class="message">
-            Together with our families, we joyfully invite you
-            to celebrate our wedding day with us.
-        </p>
-
-        <div class="details">
-
-            <strong>Sunday, November 22, 2026</strong><br>
-
-            3:30 PM<br><br>
-
-            <strong>Stalla Suites Events Place</strong><br>
-
-            Quezon City, Philippines
-
-        </div>
-
-        <p class="message">
-            Your presence will make our special day
-            even more meaningful.
-        </p>
-
-        <div class="buttons">
-
-            <a href="sponsors.html" class="button">
-                PRIMARY SPONSORS
-            </a>
-
-            <a href="wedding-party.html" class="button">
-                WEDDING PARTY
-            </a>
-
-            <a href="venue-map.html" class="button">
-        VENUE MAP
-            </a>
-
-           <!-- Gift & Attire Button - EXACT MATCH -->
-<div style="text-align: center; margin: 2rem 0;">
-  <a href="gift-attire.html" style="
-    display: inline-block;
-    background-color: #000000;
-    color: #ffffff;
-    padding: 12px 32px;
-    text-transform: uppercase;
-    text-decoration: none;
-    letter-spacing: 1px;
-    font-size: 1rem;
-  ">
-    GIFT & ATTIRE GUIDE
-  </a>
-</div>
-
-        </div>
-
+    <!-- === HOME SECTION === -->
+    <div class="top-icon">𝓣</div>
+    <p class="invite-header">We're Getting Married</p>
+    
+    <h1 class="names">Kent <span class="ampersand">&</span> Noemae</h1>
+    
+    <p class="intro">
+        Together with our families, we joyfully invite you to celebrate our<br>
+        wedding day with us.
+    </p>
+    
+    <div class="details">
+        <p>Sunday, November 22, 2026</p>
+        <p>3:30 PM</p>
+        <p style="font-weight:bold; margin-top:1rem;">Stalla Suites Events Place</p>
+        <p>Quezon City, Philippines</p>
+        <p style="margin-top:1.5rem;">Your presence will make our special day even more meaningful.</p>
     </div>
+
+    <!-- Navigation Buttons -->
+    <div class="button-row">
+        <a href="#sponsors" class="button">Primary Sponsors</a>
+        <a href="#party" class="button">Wedding Party</a>
+        <a href="#venue" class="button">Venue Map</a>
+        <a href="#gift" class="button">Gift & Attire Guide</a>
+    </div>
+
+    <!-- === SPONSORS SECTION === -->
+    <div class="section" id="sponsors">
+        <h2>Primary Sponsors</h2>
+        <div class="sponsors-list">
+            <!-- Add your sponsors names here -->
+            <p>Name 1 & Name 2</p>
+            <p>Name 3 & Name 4</p>
+            <p>Name 5 & Name 6</p>
+        </div>
+    </div>
+
+    <!-- === WEDDING PARTY SECTION === -->
+    <div class="section" id="party">
+        <h2>Wedding Party</h2>
+        <div class="party-list">
+            <!-- Add your entourage names here -->
+            <p><strong>Best Man</strong></p>
+            <p>Name</p>
+            <br>
+            <p><strong>Maid of Honor</strong></p>
+            <p>Name</p>
+            <br>
+            <p><strong>Groomsmen</strong></p>
+            <p>Name • Name • Name</p>
+            <br>
+            <p><strong>Bridesmaids</strong></p>
+            <p>Name • Name • Name</p>
+        </div>
+    </div>
+
+    <!-- === VENUE MAP SECTION === -->
+    <div class="section" id="venue">
+        <h2>Venue Map</h2>
+        <h3>Stalla Suites Events Place</h3>
+        <p>Quezon City, Philippines</p>
+        <div class="map-placeholder">
+            📍 Map will appear here<br>
+            <em>Embed your Google Maps link or image</em>
+        </div>
+    </div>
+
+    <!-- === GIFT & ATTIRE SECTION === -->
+    <div class="section" id="gift">
+        <h1 class="names-script">Kent <span class="ampersand">&</span> Noemae</h1>
+        <h2>Gift Guide</h2>
+        <div class="divider"></div>
+        
+        <p class="gift-text">
+            Your presence at our wedding is the greatest gift of all. However,<br>
+            If you desire to give nonetheless,<br>
+            a monetary gift for our future is the one we suggest.
+        </p>
+
+        <h2>Attire</h2>
+        <p class="attire-options">Formal or Semi Formal</p>
+
+        <div class="icons-row">
+            <div class="icon">
+                <svg viewBox="0 0 100 100"><path d="M35,25 L65,25 L70,35 L60,40 L60,85 L40,85 L40,40 L30,35 Z M44,35 L56,35 L56,43 L44,43 Z"/></svg>
+            </div>
+            <div class="icon">
+                <svg viewBox="0 0 100 100"><path d="M50,25 C60,25 66,35 66,45 L82,75 L72,80 L50,85 L28,80 L18,75 L34,45 C34,35 40,25 50,25 Z"/></svg>
+            </div>
+            <div class="icon">
+                <p style="font-style:italic; font-size:0.9rem;">Color Palette</p>
+                <div class="color-swatch"></div>
+            </div>
+        </div>
+    </div>
+
+    <p style="margin-top: 4rem; font-style: italic;">— We can't wait to celebrate with you —</p>
 
 </body>
 </html>
