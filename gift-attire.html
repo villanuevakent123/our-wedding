@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gift & Attire Guide — Kent & Noemae</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Georgia', serif;
+        }
+        body {
+            background: #f8f6f3;
+            color: #2c3e50;
+            line-height: 1.8;
+            padding: 2rem;
+            max-width: 700px;
+            margin: 0 auto;
+        }
+        .container {
+            background: white;
+            padding: 3rem;
+            border-radius: 12px;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+            border-left: 5px solid #8b3a3a;
+            border-right: 5px solid #8b3a3a;
+        }
+        h1.names {
+            font-family: 'Brush Script MT', cursive;
+            font-size: 3rem;
+            text-align: center;
+            color: #2c3e50;
+            margin-bottom: 0.5rem;
+        }
+        .ampersand {
+            color: #8b3a3a;
+        }
+        h2 {
+            text-align: center;
+            text-transform: uppercase;
+            letter-spacing: 3px;
+            color: #2c3e50;
+            margin-bottom: 2rem;
+            border-bottom: 1px solid #ddd;
+            padding-bottom: 1rem;
+        }
+        .section {
+            margin-bottom: 2.5rem;
+        }
+        .section h3 {
+            font-size: 1.5rem;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            color: #2c3e50;
+            margin-bottom: 1rem;
+        }
+        .gift-text {
+            font-size: 1.1rem;
+            text-align: center;
+            font-style: italic;
+        }
+        .attire-options {
+            text-align: center;
+            font-size: 1.2rem;
+            font-weight: bold;
+            margin: 1rem 0;
+        }
+        .icons-row {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            margin: 2rem 0;
+        }
+        .icon {
+            text-align: center;
+        }
+        .icon img, .icon svg {
+            width: 100px;
+            height: auto;
+            fill: #2c3e50;
+        }
+        .color-palette {
+            text-align: center;
+            margin-top: 1rem;
+        }
+        .color-palette p {
+            font-style: italic;
+            margin-bottom: 0.5rem;
+        }
+        .color-swatch {
+            width: 60px;
+            height: 60px;
+            border-radius: 50%;
+            background: #2c3e50;
+            margin: 0 auto;
+        }
+        .back-btn {
+            display: inline-block;
+            margin-top: 2rem;
+            padding: 0.8rem 2rem;
+            background: #2c3e50;
+            color: white;
+            text-decoration: none;
+            border-radius: 6px;
+            transition: background 0.3s;
+        }
+        .back-btn:hover {
+            background: #8b3a3a;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1 class="names">Kent <span class="ampersand">&</span> Noemae</h1>
+        
+        <h2>Gift Guide</h2>
+        <div class="section">
+            <p class="gift-text">
+                Your presence at our wedding is the greatest gift of all. However,<br>
+                If you desire to give nonetheless,<br>
+                a monetary gift for our future is the one we suggest.
+            </p>
+        </div>
+
+        <div class="section">
+            <h3>Attire</h3>
+            <p class="attire-options">FORMAL OR SEMI FORMAL</p>
+            
+            <div class="icons-row">
+                <div class="icon">
+                    <svg viewBox="0 0 100 100">
+                        <path fill="#2c3e50" d="M30,20 L70,20 L75,30 L65,35 L65,80 L35,80 L35,35 L25,30 Z M42,30 L58,30 L58,40 L42,40 Z M45,48 L55,48 L55,55 L45,55 Z M45,60 L55,60 L55,67 L45,67 Z M45,72 L55,72 L55,79 L45,79 Z"/>
+                    </svg>
+                </div>
+                <div class="icon">
+                    <svg viewBox="0 0 100 100">
+                        <path fill="#2c3e50" d="M50,20 C60,20 65,30 65,40 L80,70 L70,75 L50,80 L30,75 L20,70 L35,40 C35,30 40,20 50,20 Z"/>
+                    </svg>
+                </div>
+                <div class="icon color-palette">
+                    <p>Color Palette</p>
+                    <div class="color-swatch"></div>
+                </div>
+            </div>
+        </div>
+
+        <a href="index.html" class="back-btn">← Back to Home</a>
+    </div>
+</body>
+</html>
