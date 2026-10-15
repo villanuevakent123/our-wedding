@@ -42,7 +42,6 @@
             width: 280px;
             margin-bottom: 1.2rem;
             outline: none;
-            transition: border 0.3s;
         }
         .pass-input:focus { border-color: #8b3a3a; }
         .pass-btn {
@@ -53,10 +52,9 @@
             border-radius: 8px;
             font-size: 1rem;
             cursor: pointer;
-            transition: background 0.3s, transform 0.2s;
             margin-top: 0.5rem;
         }
-        .pass-btn:hover { background: #a54848; transform: scale(1.03); }
+        .pass-btn:hover { background: #a54848; }
         .error-msg {
             color: #ff6b6b;
             margin-top: 1.2rem;
@@ -83,7 +81,7 @@
     <p class="error-msg" id="errorMsg">❌ Mali ang isa o pareho. Subukan muli.</p>
 
 <script>
-// 👇 ITO ANG TAMANG SAGOT — PALITAN KUNG KAILANGAN
+// ✅ TAMANG SAGOT — HUWAG BAGUHIN MALIBAN KUNG KAILANGAN
 const CORRECT_GROOM = "kent";
 const CORRECT_BRIDE = "noemae";
 
@@ -92,8 +90,8 @@ function checkAnswers() {
     const brideName = document.getElementById('brideInput').value.trim().toLowerCase();
 
     if (groomName === CORRECT_GROOM && brideName === CORRECT_BRIDE) {
-        // ✅ TAMA — Pumunta sa pangunahing imbitasyon
-        window.location.href = "index.html";
+        // ✅ TAMA — Pumunta sa imbitasyon
+        window.location.href = "invitation.html";
     } else {
         // ❌ MALI — Ipakita ang mensahe
         document.getElementById('errorMsg').style.display = 'block';
