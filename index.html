@@ -11,51 +11,51 @@
             color: #000;
             font-family: 'Georgia', serif;
             line-height: 1.8;
-            padding: 2rem;
+            padding: 3rem 2rem;
             max-width: 700px;
             margin: 0 auto;
             text-align: center;
         }
-        .top-icon { font-size: 2rem; margin-bottom: 0.5rem; }
+        .top-icon {
+            font-size: 2.5rem;
+            margin-bottom: 0.5rem;
+        }
         .invite-header {
             text-transform: uppercase;
             letter-spacing: 3px;
             margin-bottom: 1rem;
+            font-size: 1.1rem;
         }
         .names {
             font-size: 3rem;
-            margin: 1rem 0;
+            margin: 1rem 0 2rem;
         }
         .ampersand { color: #8b3a3a; }
-        .intro { margin-bottom: 2rem; }
-        .details { margin-bottom: 3rem; }
-        .details p { margin: 0.5rem 0; font-size: 1.1rem; }
-        .button-row {
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: center;
-            gap: 10px;
-            margin: 2rem 0 3rem;
+        .intro {
+            margin-bottom: 2.5rem;
+            font-size: 1.1rem;
         }
-        .button {
-            display: inline-block;
-            background: #000;
-            color: #fff;
-            padding: 14px 28px;
-            text-transform: uppercase;
-            text-decoration: none;
-            font-size: 0.95rem;
-            letter-spacing: 1px;
+        .details p {
+            margin: 0.5rem 0;
+            font-size: 1.1rem;
+        }
+        .details strong {
+            font-size: 1.2rem;
+        }
+        .closing {
+            margin-top: 1rem;
+            margin-bottom: 4rem;
+            font-size: 1.1rem;
         }
         .section {
             margin: 4rem 0;
-            padding-top: 2rem;
+            padding-top: 3rem;
             border-top: 1px solid #ddd;
         }
         .section h2 {
             text-transform: uppercase;
             letter-spacing: 2px;
-            margin-bottom: 1.5rem;
+            margin-bottom: 2rem;
             font-size: 1.5rem;
         }
         .names-script {
@@ -79,7 +79,7 @@
             text-transform: uppercase;
             font-weight: bold;
             font-size: 1.3rem;
-            margin: 1.5rem 0 2rem;
+            margin: 1.5rem 0 2.5rem;
         }
         .icons-row {
             display: flex;
@@ -102,7 +102,6 @@
             margin: 0 auto;
         }
         .party-list, .sponsors-list {
-            text-align: center;
             line-height: 2;
         }
         .map-placeholder {
@@ -111,43 +110,34 @@
             border: 1px solid #ddd;
             margin: 1rem 0;
         }
-        a:hover { opacity: 0.85; }
     </style>
 </head>
 <body>
 
     <!-- === HOME SECTION === -->
-    <div class="top-icon">𝓣</div>
-    <p class="invite-header">We're Getting Married</p>
-    
+    <div class="top-icon">𝒯</div>
+    <p class="invite-header">WE'RE GETTING MARRIED</p>
+
     <h1 class="names">Kent <span class="ampersand">&</span> Noemae</h1>
-    
+
     <p class="intro">
         Together with our families, we joyfully invite you to celebrate our<br>
         wedding day with us.
     </p>
-    
+
     <div class="details">
         <p>Sunday, November 22, 2026</p>
         <p>3:30 PM</p>
-        <p style="font-weight:bold; margin-top:1rem;">Stalla Suites Events Place</p>
+        <p><strong>Stalla Suites Events Place</strong></p>
         <p>Quezon City, Philippines</p>
-        <p style="margin-top:1.5rem;">Your presence will make our special day even more meaningful.</p>
     </div>
 
-    <!-- Navigation Buttons -->
-    <div class="button-row">
-        <a href="#sponsors" class="button">Primary Sponsors</a>
-        <a href="#party" class="button">Wedding Party</a>
-        <a href="#venue" class="button">Venue Map</a>
-        <a href="#gift" class="button">Gift & Attire Guide</a>
-    </div>
+    <p class="closing">Your presence will make our special day even more meaningful.</p>
 
     <!-- === SPONSORS SECTION === -->
-    <div class="section" id="sponsors">
+    <div class="section">
         <h2>Primary Sponsors</h2>
         <div class="sponsors-list">
-            <!-- Add your sponsors names here -->
             <p>Name 1 & Name 2</p>
             <p>Name 3 & Name 4</p>
             <p>Name 5 & Name 6</p>
@@ -155,10 +145,9 @@
     </div>
 
     <!-- === WEDDING PARTY SECTION === -->
-    <div class="section" id="party">
+    <div class="section">
         <h2>Wedding Party</h2>
         <div class="party-list">
-            <!-- Add your entourage names here -->
             <p><strong>Best Man</strong></p>
             <p>Name</p>
             <br>
@@ -174,7 +163,7 @@
     </div>
 
     <!-- === VENUE MAP SECTION === -->
-    <div class="section" id="venue">
+    <div class="section">
         <h2>Venue Map</h2>
         <h3>Stalla Suites Events Place</h3>
         <p>Quezon City, Philippines</p>
@@ -185,11 +174,11 @@
     </div>
 
     <!-- === GIFT & ATTIRE SECTION === -->
-    <div class="section" id="gift">
+    <div class="section">
         <h1 class="names-script">Kent <span class="ampersand">&</span> Noemae</h1>
         <h2>Gift Guide</h2>
         <div class="divider"></div>
-        
+
         <p class="gift-text">
             Your presence at our wedding is the greatest gift of all. However,<br>
             If you desire to give nonetheless,<br>
@@ -206,8 +195,8 @@
             <div class="icon">
                 <svg viewBox="0 0 100 100"><path d="M50,25 C60,25 66,35 66,45 L82,75 L72,80 L50,85 L28,80 L18,75 L34,45 C34,35 40,25 50,25 Z"/></svg>
             </div>
-            <div class="icon">
-                <p style="font-style:italic; font-size:0.9rem;">Color Palette</p>
+            <div class="icon color-palette">
+                <p>Color Palette</p>
                 <div class="color-swatch"></div>
             </div>
         </div>
