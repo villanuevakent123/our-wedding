@@ -434,5 +434,92 @@
         }, 1000);
     </script>
 
+        <!-- ✅ RSVP CONFIRMATION SECTION -->
+    <div class="section" style="border-top: 1px solid rgba(60,60,60,0.4); margin-top: 4rem; padding-top: 3rem;">
+        <h2 style="color: #8b3a3a;">Confirm Your Attendance</h2>
+        <p style="color: #cccccc; margin-bottom: 2rem;">We would be honored to have you celebrate with us.<br>Please confirm your attendance below 💍</p>
+        
+        <form id="rsvpForm" style="max-width: 450px; margin: 0 auto; text-align: center;">
+            <input 
+                type="text" 
+                id="guestName" 
+                placeholder="Your Full Name" 
+                required
+                style="width: 100%; padding: 0.9rem 1.2rem; margin-bottom: 1rem; border: 1px solid #555; background: rgba(255,255,255,0.1); color: #fff; border-radius: 8px; font-size: 1rem; outline: none;"
+            >
+            <input 
+                type="email" 
+                id="guestEmail" 
+                placeholder="Your Email Address" 
+                required
+                style="width: 100%; padding: 0.9rem 1.2rem; margin-bottom: 1rem; border: 1px solid #555; background: rgba(255,255,255,0.1); color: #fff; border-radius: 8px; font-size: 1rem; outline: none;"
+            >
+            <select 
+                id="attendance" 
+                required
+                style="width: 100%; padding: 0.9rem 1.2rem; margin-bottom: 1.5rem; border: 1px solid #555; background: rgba(255,255,255,0.1); color: #fff; border-radius: 8px; font-size: 1rem; outline: none;"
+            >
+                <option value="">— Will you be there? —</option>
+                <option value="attending">✅ Yes, I will attend!</option>
+                <option value="not-attending">❌ Sorry, I cannot attend</option>
+            </select>
+            <button 
+                type="submit"
+                style="padding: 0.9rem 2.5rem; background: #8b3a3a; color: #fff; border: none; border-radius: 8px; font-size: 1rem; cursor: pointer; transition: background 0.3s;"
+                onmouseover="this.style.background='#a54848'"
+                onmouseout="this.style.background='#8b3a3a'"
+            >
+                Confirm Attendance ✨
+            </button>
+            
+            <div id="rsvpSuccess" style="display: none; margin-top: 1.5rem; padding: 1.2rem; background: rgba(40,100,60,0.3); border-radius: 8px; border: 1px solid #4a6;">
+                ✅ Thank you! Your confirmation has been received.<br>
+                We look forward to celebrating with you! 💍
+            </div>
+            <div id="rsvpError" style="display: none; margin-top: 1.5rem; padding: 1rem; background: rgba(100,40,40,0.3); border-radius: 8px; border: 1px solid #a44; color: #ff9999;">
+                Something went wrong. Please try again or send us a message directly.
+            </div>
+        </form>
+    </div>
+
+<script>
+// === RSVP CONFIRMATION SCRIPT ===
+const YOUR_EMAIL = "villanuevakent123@gmail.com"; // 👇 CHANGE THIS TO YOUR EMAIL
+
+document.getElementById('rsvpForm').addEventListener('submit', function(e) {
+    e.preventDefault();
+    
+    const name = document.getElementById('guestName').value.trim();
+    const email = document.getElementById('guestEmail').value.trim();
+    const attendance = document.getElementById('attendance').value;
+    
+    if (!name || !email || !attendance) {
+        alert('Please fill in all fields');
+        return;
+    }
+    
+    // Build confirmation message
+    const statusText = attendance === 'attending' ? '✅ WILL ATTEND' : '❌ CANNOT ATTEND';
+    const subject = encodeURIComponent(`Wedding RSVP: ${name} - ${statusText}`);
+    const body = encodeURIComponent(
+        `WEDDING RSVP CONFIRMATION\n` +
+        `━━━━━━━━━━━━━━━━━━━━━━━━━━━━\n` +
+        `Guest Name: ${name}\n` +
+        `Email: ${email}\n` +
+        `Status: ${statusText}\n` +
+        `━━━━━━━━━━━━━━━━━━━━━━━━━━━━\n` +
+        `Confirmed from your wedding invitation website 💍`
+    );
+    
+    // Open email client for you to receive notification
+    window.location.href = `mailto:${YOUR_EMAIL}?subject=${subject}&body=${body}`;
+    
+    // Show success message to guest
+    document.getElementById('rsvpForm').style.opacity = '0.5';
+    document.getElementById('rsvpForm').style.pointerEvents = 'none';
+    document.getElementById('rsvpSuccess').style.display = 'block';
+});
+</script>
+    
 </body>
 </html>
